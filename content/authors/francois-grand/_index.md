@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Developer
+role: Developer (FSPM team, AMAP lab, CIRAD)
 
 # Organizations/Affiliations
 organizations:

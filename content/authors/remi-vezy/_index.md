@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Researcher on FSPM
+role:  (FSPM team, AMAP lab, CIRAD)
 
 # Organizations/Affiliations
 organizations:

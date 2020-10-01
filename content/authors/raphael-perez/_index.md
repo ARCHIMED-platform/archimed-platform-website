@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Researcher
+role: Researcher (PAM team, AGAP lab, CIRAD)
 
 # Organizations/Affiliations
 organizations:
