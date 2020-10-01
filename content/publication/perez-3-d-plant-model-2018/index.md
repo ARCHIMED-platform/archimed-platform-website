@@ -1,0 +1,14 @@
+---
+title: "3D plant model assessed by terrestrial LiDAR and hemispherical photographs: A useful tool for comparing light interception among oil palm progenies"
+date: 2018-02-01
+publishDate: 2020-10-01T08:54:49.409823Z
+authors: ["Raphael P. A. Perez", "Evelyne Costes", "Frederic Theveny", "Sebastien Griffon", "Jean-Pierre Caliman", "Jean Dauzat"]
+publication_types: ["2"]
+abstract: "The paradigm of functional-structural models (FSPM) assumes that studying the detailed organisation of plant structure allows a better understanding of functional processes; in particular the way plants capture light for performing photosynthesis. However, much attention must be paid toward the consistency between virtual plants and plants in the field in terms of size and geometry to accurately evaluate light interception. This paper thus aimed at i) assessing the capacity of a 3D architectural model based on oil palms (Elaeis guineensis) to accurately represent plants structural characteristics at both the scale of the individual plant and the cultivated plot and ii) employing the validated 3D mock-ups to investigate how light interception efficiency varies among progenies that exhibit different architectures. Innovative indicators related to plant geometry and topology were derived from terrestrial LiDAR scanners (TLS) and hemispherical photographs (HP) in order to assess a 3D plant model. Indicators such as plant height, width and volume, gap fractions and solid angle projections were established from field measurements and were compared to equivalent indicators that had been extracted from virtual TLS (VTLS) and virtual HP (VHP) simulated on 3D mock-ups. Indicators were then evaluated for their significance in terms of light interception. Progeny effect on light interception efficiency was finally evaluated for five progenies. The structural indicators estimated from VTLS and VHP were significantly correlated with equivalent indicators estimated from TLS and HP, respectively, and with simulated outputs related to light interception. Light interception efficiencies estimated from validated 3D mock-ups differed significantly among the five progenies under study, most notably along plant development. Our results highlight the relevance of combining TLS- and HP-derived indicators to evaluate the reliability of virtual 3D reconstruction of plants in relation to light capture, at both the plant and plot scales. The study paves the way for further investigations aiming at unravelling the relationships between oil palm architecture and the physiological processes driving its production."
+featured: false
+publication: "*Agricultural and Forest Meteorology*"
+tags: ["3D mock-up", "Genetic variability", "Light interception", "Terrestrial LiDAR", "Validation"]
+url_pdf: "http://www.sciencedirect.com/science/article/pii/S0168192317303817"
+doi: "10.1016/j.agrformet.2017.11.008"
+---
+

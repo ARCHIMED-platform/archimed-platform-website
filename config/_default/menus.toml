@@ -4,9 +4,19 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
-  url = "#about"
-  weight = 10
+  name = "ARCHIMED-φ"
+  url = "#archimed-phy"
+  weight = 11
+
+[[main]]
+  name = "ARCHIMED-γ"
+  url = "#archimed-growth"
+  weight = 12
+
+[[main]]
+  name = "Features"
+  url = "#accessibility"
+  weight = 13
 
 [[main]]
   name = "Posts"
@@ -17,6 +27,11 @@
   name = "Projects"
   url = "#projects"
   weight = 30
+
+[[main]]
+  name = "Team"
+  url = "#people"
+  weight = 32
 
 [[main]]
   name = "Publications"
