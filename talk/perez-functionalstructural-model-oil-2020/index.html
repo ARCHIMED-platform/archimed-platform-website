@@ -1,0 +1,1779 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Rémi Vezy">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Functional-structural plant modelling approaches (FSPM) open the way for exploring the relationships between the 3D structure and the physiological functioning of plants in relation to environmental conditions. FSPMs can be particularly interesting when dealing with perennial crops like oil palm, for which research on innovative management practices requires long and expensive agronomic trials. The present study is part of the PalmStudio project, which aims at developing a FSPM for oil palm capable of producing virtual experiments to test the relevance of innovative management practices and/or design ideotypes. We propose a methodological framework which integrates architectural responses to planting density in an existing oil palm FSPM (Perez et al. 2018a b). Combining standard field phenotyping with Lidar-based derived measurements, we manage to evaluate the phenotypic plasticity of the main parameters required for the calibration of the 3D plant model. Density-based allometries of leaf geometry and biomass are then derived from the observed variations in phenotypic traits and integrated into the FSPM. Our results illustrate the accuracy and the efficiency of Lidar-based phenotyping of leaf geometrical traits. In average, we find less than 3% error in leaf dimensions (i.e. rachis length) in comparison with traditional manual field measurements. The fast and efficient measurements of usually labour-intensive traits such as leaf curvature allowed to estimate the plasticity of leaf geometry in response to density. We find that the main traits affected by density were leaf dimensions (up to 15% and 25% of increase in rachis length and petiole length respectively) and curvature (15% of increase in leaf erectness-related parameter), whereas other structural traits like the number of leaflets per leaf remained unchanged. Simple density-based allometric relationships were then modelled and combined with the existing allometric-based 3D oil palm model Vpalm (Perez et al. 2018a). These data also enable the development and the integration in Vpalm of a biomechanical model simulating leaf curvature. The methodology presented in this study paves the way for a rapid integration of phenotypic plasticity in FSPMs. Our FSPM is now able to estimate how planting density affect not only plant architecture but also functional processes such as carbon assimilation and transpiration using VPalm to build 3D mock-ups and ARCHIMED to simulate the biophysical processes. Ongoing research aims at coupling the current FSPM with a carbon allocation model (Pallas et al. 2013) to simulate the retroactions of functioning processes on plant architecture together with environmental and agronomic conditions.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@VezyRemi">
+  <meta property="twitter:creator" content="@VezyRemi">
+  
+  <meta property="og:site_name" content="ARCHIMED">
+  <meta property="og:url" content="http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/">
+  <meta property="og:title" content="Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density | ARCHIMED">
+  <meta property="og:description" content="Functional-structural plant modelling approaches (FSPM) open the way for exploring the relationships between the 3D structure and the physiological functioning of plants in relation to environmental conditions. FSPMs can be particularly interesting when dealing with perennial crops like oil palm, for which research on innovative management practices requires long and expensive agronomic trials. The present study is part of the PalmStudio project, which aims at developing a FSPM for oil palm capable of producing virtual experiments to test the relevance of innovative management practices and/or design ideotypes. We propose a methodological framework which integrates architectural responses to planting density in an existing oil palm FSPM (Perez et al. 2018a b). Combining standard field phenotyping with Lidar-based derived measurements, we manage to evaluate the phenotypic plasticity of the main parameters required for the calibration of the 3D plant model. Density-based allometries of leaf geometry and biomass are then derived from the observed variations in phenotypic traits and integrated into the FSPM. Our results illustrate the accuracy and the efficiency of Lidar-based phenotyping of leaf geometrical traits. In average, we find less than 3% error in leaf dimensions (i.e. rachis length) in comparison with traditional manual field measurements. The fast and efficient measurements of usually labour-intensive traits such as leaf curvature allowed to estimate the plasticity of leaf geometry in response to density. We find that the main traits affected by density were leaf dimensions (up to 15% and 25% of increase in rachis length and petiole length respectively) and curvature (15% of increase in leaf erectness-related parameter), whereas other structural traits like the number of leaflets per leaf remained unchanged. Simple density-based allometric relationships were then modelled and combined with the existing allometric-based 3D oil palm model Vpalm (Perez et al. 2018a). These data also enable the development and the integration in Vpalm of a biomechanical model simulating leaf curvature. The methodology presented in this study paves the way for a rapid integration of phenotypic plasticity in FSPMs. Our FSPM is now able to estimate how planting density affect not only plant architecture but also functional processes such as carbon assimilation and transpiration using VPalm to build 3D mock-ups and ARCHIMED to simulate the biophysical processes. Ongoing research aims at coupling the current FSPM with a carbon allocation model (Pallas et al. 2013) to simulate the retroactions of functioning processes on plant architecture together with environmental and agronomic conditions."><meta property="og:image" content="http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-10-01T08:54:49&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-10-01T17:23:12&#43;02:00">
+  
+
+  
+
+
+
+  
+    
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/"
+  },
+  "name": "Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density",
+  
+  
+  "startDate": "2020-10-05T00:00:00Z",
+  
+  
+  "performer": {
+    "@type": "Person",
+    "name": "Raphael P.A. Perez"
+  },
+  
+  "description": "Functional-structural plant modelling approaches (FSPM) open the way for exploring the relationships between the 3D structure and the physiological functioning of plants in relation to environmental conditions. FSPMs can be particularly interesting when dealing with perennial crops like oil palm, for which research on innovative management practices requires long and expensive agronomic trials. The present study is part of the PalmStudio project, which aims at developing a FSPM for oil palm capable of producing virtual experiments to test the relevance of innovative management practices and/or design ideotypes. We propose a methodological framework which integrates architectural responses to planting density in an existing oil palm FSPM (Perez et al. 2018a b). Combining standard field phenotyping with Lidar-based derived measurements, we manage to evaluate the phenotypic plasticity of the main parameters required for the calibration of the 3D plant model. Density-based allometries of leaf geometry and biomass are then derived from the observed variations in phenotypic traits and integrated into the FSPM. Our results illustrate the accuracy and the efficiency of Lidar-based phenotyping of leaf geometrical traits. In average, we find less than 3% error in leaf dimensions (i.e. rachis length) in comparison with traditional manual field measurements. The fast and efficient measurements of usually labour-intensive traits such as leaf curvature allowed to estimate the plasticity of leaf geometry in response to density. We find that the main traits affected by density were leaf dimensions (up to 15% and 25% of increase in rachis length and petiole length respectively) and curvature (15% of increase in leaf erectness-related parameter), whereas other structural traits like the number of leaflets per leaf remained unchanged. Simple density-based allometric relationships were then modelled and combined with the existing allometric-based 3D oil palm model Vpalm (Perez et al. 2018a). These data also enable the development and the integration in Vpalm of a biomechanical model simulating leaf curvature. The methodology presented in this study paves the way for a rapid integration of phenotypic plasticity in FSPMs. Our FSPM is now able to estimate how planting density affect not only plant architecture but also functional processes such as carbon assimilation and transpiration using VPalm to build 3D mock-ups and ARCHIMED to simulate the biophysical processes. Ongoing research aims at coupling the current FSPM with a carbon allocation model (Pallas et al. 2013) to simulate the retroactions of functioning processes on plant architecture together with environmental and agronomic conditions."
+}
+</script>
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density | ARCHIMED</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.staDarkLightChooser = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">ARCHIMED</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">ARCHIMED</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#archimed-phy"><span>ARCHIMED-φ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#archimed-growth"><span>ARCHIMED-γ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#accessibility"><span>Features</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people"><span>Team</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span >Raphael Perez</span>, <span >Remi Vezy</span>, <span >Loic Brancheriau</span>, <span >Frederic Boudon</span>, <span >Francois Grand</span>, <span >Doni Artanto Raharjo</span>, <span >Jean-Pierre Caliman</span>, <span >Jean Dauzat</span>
+  </div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/talk/perez-functionalstructural-model-oil-2020/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract">Functional-structural plant modelling approaches (FSPM) open the way for exploring the relationships between the 3D structure and the physiological functioning of plants in relation to environmental conditions. FSPMs can be particularly interesting when dealing with perennial crops like oil palm, for which research on innovative management practices requires long and expensive agronomic trials. The present study is part of the PalmStudio project, which aims at developing a FSPM for oil palm capable of producing virtual experiments to test the relevance of innovative management practices and/or design ideotypes. We propose a methodological framework which integrates architectural responses to planting density in an existing oil palm FSPM (Perez et al. 2018a b). Combining standard field phenotyping with Lidar-based derived measurements, we manage to evaluate the phenotypic plasticity of the main parameters required for the calibration of the 3D plant model. Density-based allometries of leaf geometry and biomass are then derived from the observed variations in phenotypic traits and integrated into the FSPM. Our results illustrate the accuracy and the efficiency of Lidar-based phenotyping of leaf geometrical traits. In average, we find less than 3% error in leaf dimensions (i.e. rachis length) in comparison with traditional manual field measurements. The fast and efficient measurements of usually labour-intensive traits such as leaf curvature allowed to estimate the plasticity of leaf geometry in response to density. We find that the main traits affected by density were leaf dimensions (up to 15% and 25% of increase in rachis length and petiole length respectively) and curvature (15% of increase in leaf erectness-related parameter), whereas other structural traits like the number of leaflets per leaf remained unchanged. Simple density-based allometric relationships were then modelled and combined with the existing allometric-based 3D oil palm model Vpalm (Perez et al. 2018a). These data also enable the development and the integration in Vpalm of a biomechanical model simulating leaf curvature. The methodology presented in this study paves the way for a rapid integration of phenotypic plasticity in FSPMs. Our FSPM is now able to estimate how planting density affect not only plant architecture but also functional processes such as carbon assimilation and transpiration using VPalm to build 3D mock-ups and ARCHIMED to simulate the biophysical processes. Ongoing research aims at coupling the current FSPM with a carbon allocation model (Pallas et al. 2013) to simulate the retroactions of functioning processes on plant architecture together with environmental and agronomic conditions.</p>
+    
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9">
+            Oct 5, 2020 12:00 AM
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-overview-of-the-methodological-approach-proposed-to-integrate-in-a-3d-model-the-effect-of-planting-density-on-plant-architecture-a-lidar-point-clouds-with-the-extraction-of-leaf-geometrical-attributes-length-and-curvature-b-comparison-of-lidar-based-vs-hand-measured-rachis-length-left-and-3d-positions-for-leaf-curvature-estimation-right-c-example-of-density-based-allometry-d-3d-model-outputs-for-conventional-left-and-double-right-density">
+
+
+  <a data-fancybox="" href="/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png" data-caption="Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.">
+
+
+  <img data-src="/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1518" height="872">
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.
+  </figcaption>
+
+
+</figure>
+
+<h1 id="references">References</h1>
+<p>Pallas B., Clément-Vidal A., Rebolledo M.-C., Soulié J.-C. &amp; Luquet D. (2013) Using plant growth modeling to analyze C source-sink relations under drought: inter- and intraspecific comparison. Frontiers in plant science 4, 437.</p>
+<p>Perez R.P.A., Costes E., Théveny F., Griffon S., Caliman J.P. &amp; Dauzat J. (2018a) 3D plant model assessed by terrestrial LiDAR and hemispherical photographs: A useful tool for comparing light interception among oil palm progenies. Agricultural and Forest Meteorology 249, 250–263.</p>
+<p>Perez R.P.A., Dauzat J., Pallas B., Lamour J., Verley P., Caliman J.P., … Faivre R. (2018b) Designing oil palm architectural ideotypes for optimal light interception and carbon assimilation through a sensitivity analysis of leaf traits. Annals of Botany 121, 909–926.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/&amp;text=Toward%20a%20functional-structural%20model%20of%20oil%20palm%20accounting%20for%20architectural%20plasticity%20in%20response%20to%20planting%20density" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/&amp;t=Toward%20a%20functional-structural%20model%20of%20oil%20palm%20accounting%20for%20architectural%20plasticity%20in%20response%20to%20planting%20density" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Toward%20a%20functional-structural%20model%20of%20oil%20palm%20accounting%20for%20architectural%20plasticity%20in%20response%20to%20planting%20density&amp;body=http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/&amp;title=Toward%20a%20functional-structural%20model%20of%20oil%20palm%20accounting%20for%20architectural%20plasticity%20in%20response%20to%20planting%20density" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Toward%20a%20functional-structural%20model%20of%20oil%20palm%20accounting%20for%20architectural%20plasticity%20in%20response%20to%20planting%20density%20http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/&amp;title=Toward%20a%20functional-structural%20model%20of%20oil%20palm%20accounting%20for%20architectural%20plasticity%20in%20response%20to%20planting%20density" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/raphael-p.a.-perez/avatar_hu9e106c6c38938c6e7b3c03052287c969_11810_270x270_fill_q90_lanczos_center.jpg" alt="Raphael P.A. Perez">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/raphael-p.a.-perez/">Raphael P.A. Perez</a></h5>
+        <h6 class="card-subtitle">Researcher</h6>
+        <p class="card-text">I am a researcher in plant ecophysiology and modelling at the AGAP lab. My main interests include agronomy, genetics and plant breeding.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.fr/citations?user=4MPfRjgAAAAJ&amp;hl=fr&amp;oi=ao" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/rpaperez" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-5270-9212" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Raphael_Perez" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/remi-vezy/avatar_hub0d2035294884b180984ade6b6d27d86_7015_270x270_fill_q90_lanczos_center.jpg" alt="Rémi Vezy">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/remi-vezy/">Rémi Vezy</a></h5>
+        <h6 class="card-subtitle">Researcher on FSPM</h6>
+        <p class="card-text">I am specialized in Functional-Structural Plant Modelling (FSPM), and my research interests include ecophysiology, environmental physics, tree architecture, computer models and agronomy.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/VezyRemi" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=09R4xY0AAAAJ&amp;hl=eng" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/VEZY" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-0808-1461" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Remi_Vezy" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/francois-grand/avatar_huf142fa919468a0f6ee50aaac128ced50_75901_270x270_fill_lanczos_center_2.png" alt="François Grand">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/francois-grand/">François Grand</a></h5>
+        <h6 class="card-subtitle">Developer</h6>
+        <p class="card-text">I am the main developer of ARCHIMED. I recently refactored the model to a nicer code-base and I help the team implement new ideas.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/jean-dauzat/avatar_hua0cccd05f3fc3cb6bef5a86753b5c0a4_98040_270x270_fill_lanczos_center_2.png" alt="Jean Dauzat">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/jean-dauzat/">Jean Dauzat</a></h5>
+        <h6 class="card-subtitle">Researcher on FSPM</h6>
+        <p class="card-text">I am specialized in Functional-Structural Plant Modelling (FSPM), and my research interests include light interception, ecophysiology, tree architecture, botanics and agronomy.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/Dauzat" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Jean_Dauzat" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/perez-functionalstructural-model-oil-2020/">Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density</a></li>
+      
+      <li><a href="/publication/vezy-light-exchanges-discrete-2020/">Light exchanges in discrete directions as an alternative to raytracing and radiosity</a></li>
+      
+      <li><a href="/talk/vezy-light-exchanges-discrete-2020/">Light exchanges in discrete directions as an alternative to raytracing and radiosity</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.3b2b658c61ebd725bd5fc606c89fe44c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    ©2020
+  </p>
+
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+      <img src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="CC icon">
+      <img src="https://search.creativecommons.org/static/img/cc-by_icon.svg" alt="CC by icon">
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" alt="CC NC icon">
+      
+      
+        <img src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" alt="CC ND icon">
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

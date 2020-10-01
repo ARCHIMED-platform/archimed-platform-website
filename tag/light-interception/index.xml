@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Light interception | ARCHIMED</title>
+    <link>http://www.archimed.cirad.fr/tag/light-interception/</link>
+      <atom:link href="http://www.archimed.cirad.fr/tag/light-interception/index.xml" rel="self" type="application/rss+xml" />
+    <description>Light interception</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Light interception</title>
+      <link>http://www.archimed.cirad.fr/tag/light-interception/</link>
+    </image>
+    
+    <item>
+      <title>3D plant model assessed by terrestrial LiDAR and hemispherical photographs: A useful tool for comparing light interception among oil palm progenies</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-3-d-plant-model-2018/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-3-d-plant-model-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

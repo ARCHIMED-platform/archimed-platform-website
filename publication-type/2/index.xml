@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | ARCHIMED</title>
+    <link>http://www.archimed.cirad.fr/publication-type/2/</link>
+      <atom:link href="http://www.archimed.cirad.fr/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>http://www.archimed.cirad.fr/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>3D plant model assessed by terrestrial LiDAR and hemispherical photographs: A useful tool for comparing light interception among oil palm progenies</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-3-d-plant-model-2018/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-3-d-plant-model-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing oil palm architectural ideotypes for optimal light interception and carbon assimilation through a sensitivity analysis of leaf traits</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-designing-oil-palm-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-designing-oil-palm-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating mixed-effect models into an architectural plant model to simulate inter- and intra-progeny variability: a case study on oil palm (Elaeis guineensis Jacq.)</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-integrating-mixedeffect-models-2016/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-integrating-mixedeffect-models-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation of leaf transpiration and sap flow in virtual plants: model description and application to a coffee plantation in Costa Rica</title>
+      <link>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

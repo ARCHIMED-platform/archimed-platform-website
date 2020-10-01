@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sap flow | ARCHIMED</title>
+    <link>http://www.archimed.cirad.fr/tag/sap-flow/</link>
+      <atom:link href="http://www.archimed.cirad.fr/tag/sap-flow/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sap flow</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Mon, 01 Jan 2001 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Sap flow</title>
+      <link>http://www.archimed.cirad.fr/tag/sap-flow/</link>
+    </image>
+    
+    <item>
+      <title>Simulation of leaf transpiration and sap flow in virtual plants: model description and application to a coffee plantation in Costa Rica</title>
+      <link>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

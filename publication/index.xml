@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | ARCHIMED</title>
+    <link>http://www.archimed.cirad.fr/publication/</link>
+      <atom:link href="http://www.archimed.cirad.fr/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright>
+    <image>
+      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>http://www.archimed.cirad.fr/publication/</link>
+    </image>
+    
+    <item>
+      <title>Light exchanges in discrete directions as an alternative to raytracing and radiosity</title>
+      <link>http://www.archimed.cirad.fr/publication/vezy-light-exchanges-discrete-2020/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/vezy-light-exchanges-discrete-2020/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hNuwQNLMmNk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#material-and-methods&#34;&gt;Material and Methods&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#results-and-discussions&#34;&gt;Results and Discussions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Light modelling at the scale of organs is essential to account accurately for the complex interactions between biophysical processes such as photosynthesis, stomatal conductance and energy balance. Yet, the calculation of radiative exchanges at fine scales is computationally-intensive and it remains a hindrance to a widespread use of FSPMs despite advances in light modelling using either radiosity (Chelle and Andrieu, 1998) or raytracing (Bailey, 2018). This study shows that simplifications based on the discretization of radiative fluxes allow processing radiative exchanges in a natural environment while maintaining good accuracy on the simulation of biophysical processes such as carbon assimilation.&lt;/p&gt;
+&lt;h2 id=&#34;material-and-methods&#34;&gt;Material and Methods&lt;/h2&gt;
+&lt;p&gt;The present study is based on biophysical simulations performed using the ARCHIMED model. Incident radiation is depicted as a set of specular fluxes (i.e. parallel rays) in discrete directions using the sun direction for direct radiation and predefined “turtle” directions for the diffuse radiation. The “turtle” directions are obtained by splitting the sky hemisphere into sectors of equal solid angle (Dauzat et al, 2001). Optionally, direct radiation can be distributed in neighboring &amp;ldquo;turtle&amp;rdquo; sectors (turtle only). For each direction, the scene is projected on an image plane and the interception of incident light is deduced from rasterized pixel projections. Additionally, Z-Buffering gives the overlay of scene objects and, in this regard, pixels can be viewed as rays traced from outside down to the ground level. Light scattering can thus be processed similarly to raytracing. In the case of Lambertian objects, we further assume that all rays scattered by an object carry the same energy whatever the “turtle” direction. Net assimilation (An) is calculated with Farquhar’s model (Farquhar et al. 1980), stomatal conductance with Medlyn’s model (Medlyn et al. 2011) and the leaf temperature is found by solving the energy balance of the system. Simulations are run on a dense three-dimensional scene including two palms (Elaeis guineensis) with the following configuration: latitude= 15°, Day of year 71, time steps of 30mn, clearness index Kt= 0.5. A “toricity” option is used to generate a virtually infinite canopy. The number of “turtle” directions is set to 6, 16, 46 or 136. The sun position is either integrated into the turtle or separately computed. The pixel density ranges from 341 to 6821 pixels m-2. The reference outputs are obtained with the highest number of directions and pixels. * Scene metrics: plot= 15.9m*9.2m, meshes= 24 863, triangles= 571 934, LAI= 3.2, leaflets= 24 493&lt;/p&gt;
+&lt;h2 id=&#34;results-and-discussions&#34;&gt;Results and Discussions&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;#figure-evaluation-of-the-error-induced-by-a-reduction-in-number-of-directions-left-or-a-reduction-of-the-number-of-pixels-right-for-the-intercepted-photosynthetically-active-radiation-par-absorbed-energy-par--near-infrared-and-net-carbon-assimilation-an-at-the-leaflet-scale-for-a-palm-plot-values-are-presented-relative-to-the-reference-simulation-shown-as-the-first-value-on-left-ie-136-directions-on-the-left-plot-500-000-pixels-1000-pixels-on-the-right-46-directions-turtle-only-red-color-is-used-for-a-simulation-with-a-precise-computation-of-the-sun-position-and-blue-for-an-integration-of-the-sun-position-in-the-turtle&#34;&gt;Figure 1&lt;/a&gt; (left) illustrates the effect of the number of discrete light directions on the estimation of biophysical processes in comparison with the reference of 136 directions. Sampling the sun direction provides best results since direct radiation largely contributes to the PAR irradiance, the energy load of leaflets and, finally, their assimilation. Bias remain low when the sun direction is not sampled except when the number of “turtle” directions is decreased to six. The dispersion of residuals remains quite limited for 46 directions, meaning that reliable values can be obtained at leaflet scale for such configuration. Figure 1 (right) shows that a low pixel density (682 pixels m-2, i.e. 50 000 pixels) is sufficient to get a relatively unbiased estimation of carbon assimilation at plot level, but a higher density is necessary to get reliable estimation at leaflet scale. The reference configuration in the left pane of Fig. 1 generates 68.5M rays for each time step and, since several hits are recorded per ray (6 on average) this generates about 5 sub-rays that are used for the calculation of light scattering. Running the complete simulation with the reference configuration from the right pane of Fig. 1 lasts ~3.4 min for each time step (23M rays). This time can be decreased to only 2 seconds per step by storing partial scene illumination for each direction, but this preliminary step can be time-consuming, mainly during the multiple scattering for the PAR and NIR ranges. A considerable shortening is expected by treating light exchanges using directional form factors between pairs of objects instead of propagating scattered light by individual rays.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-evaluation-of-the-error-induced-by-a-reduction-in-number-of-directions-left-or-a-reduction-of-the-number-of-pixels-right-for-the-intercepted-photosynthetically-active-radiation-par-absorbed-energy-par--near-infrared-and-net-carbon-assimilation-an-at-the-leaflet-scale-for-a-palm-plot-values-are-presented-relative-to-the-reference-simulation-shown-as-the-first-value-on-left-ie-136-directions-on-the-left-plot-500-000-pixels-1000-pixels-on-the-right-46-directions-turtle-only-red-color-is-used-for-a-simulation-with-a-precise-computation-of-the-sun-position-and-blue-for-an-integration-of-the-sun-position-in-the-turtle&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.archimed.cirad.fr/publication/vezy-light-exchanges-discrete-2020/plot_hu4ad0431e86f566962496890f38c5c9fd_34044_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Evaluation of the error induced by a reduction in number of directions (Left), or a reduction of the number of pixels (Right) for the intercepted photosynthetically active radiation (PAR), absorbed energy (PAR &amp;#43; near infrared) and net carbon assimilation (An) at the leaflet scale for a palm plot. Values are presented relative to the reference simulation shown as the first value on left, i.e. 136 directions on the left plot (500 000 pixels), 1000 pixels on the right (46 directions, turtle only). Red color is used for a simulation with a precise computation of the sun position, and blue for an integration of the sun position in the turtle.&#34;&gt;
+
+
+  &lt;img data-src=&#34;http://www.archimed.cirad.fr/publication/vezy-light-exchanges-discrete-2020/plot_hu4ad0431e86f566962496890f38c5c9fd_34044_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1889&#34; height=&#34;1181&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Evaluation of the error induced by a reduction in number of directions (Left), or a reduction of the number of pixels (Right) for the intercepted photosynthetically active radiation (PAR), absorbed energy (PAR + near infrared) and net carbon assimilation (An) at the leaflet scale for a palm plot. Values are presented relative to the reference simulation shown as the first value on left, i.e. 136 directions on the left plot (500 000 pixels), 1000 pixels on the right (46 directions, turtle only). Red color is used for a simulation with a precise computation of the sun position, and blue for an integration of the sun position in the turtle.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using discrete ordinates allows performing accurate and unbiased simulations of light interception. Biases arise when decreasing the number of directions but with limited consequences on carbon assimilation. Larger biases occur when pixel density is too low to sample correctly individual leaflets. A configuration with 46 turtle directions for depicting both direct and diffuse radiation and a pixel density of 682 pixels m-2 allows fast computations while providing sufficient information to get precise light budget at fine scales.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Bailey, 2018, Ecological Modelling. 368:233-245, doi: 10.1016/j.ecolmodel.2017.11.022.&lt;/p&gt;
+&lt;p&gt;Chelle and Andrieu, 1998, Ecological Modelling 111:75-91, doi: 10.1016/S0304-3800(98)00100-8&lt;/p&gt;
+&lt;p&gt;Dauzat et al., 2001, Agric. &amp;amp; Forest Met. 109(2)143-160, doi: 10.1016/S0168-1923(01)00236-2&lt;/p&gt;
+&lt;p&gt;Farquhar et al., 1980, Planta. 149:78-90, doi: 10.1007/BF00386231&lt;/p&gt;
+&lt;p&gt;Medlyn et al., 2011, Global Change Biology. 17:2134-2144, doi: 10.1111/j.1365-2486.2010.02375.x&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/</guid>
+      <description>
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-overview-of-the-methodological-approach-proposed-to-integrate-in-a-3d-model-the-effect-of-planting-density-on-plant-architecture-a-lidar-point-clouds-with-the-extraction-of-leaf-geometrical-attributes-length-and-curvature-b-comparison-of-lidar-based-vs-hand-measured-rachis-length-left-and-3d-positions-for-leaf-curvature-estimation-right-c-example-of-density-based-allometry-d-3d-model-outputs-for-conventional-left-and-double-right-density&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
+
+
+  &lt;img data-src=&#34;http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;Pallas B., Clément-Vidal A., Rebolledo M.-C., Soulié J.-C. &amp;amp; Luquet D. (2013) Using plant growth modeling to analyze C source-sink relations under drought: inter- and intraspecific comparison. Frontiers in plant science 4, 437.&lt;/p&gt;
+&lt;p&gt;Perez R.P.A., Costes E., Théveny F., Griffon S., Caliman J.P. &amp;amp; Dauzat J. (2018a) 3D plant model assessed by terrestrial LiDAR and hemispherical photographs: A useful tool for comparing light interception among oil palm progenies. Agricultural and Forest Meteorology 249, 250–263.&lt;/p&gt;
+&lt;p&gt;Perez R.P.A., Dauzat J., Pallas B., Lamour J., Verley P., Caliman J.P., … Faivre R. (2018b) Designing oil palm architectural ideotypes for optimal light interception and carbon assimilation through a sensitivity analysis of leaf traits. Annals of Botany 121, 909–926.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3D plant model assessed by terrestrial LiDAR and hemispherical photographs: A useful tool for comparing light interception among oil palm progenies</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-3-d-plant-model-2018/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-3-d-plant-model-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing oil palm architectural ideotypes for optimal light interception and carbon assimilation through a sensitivity analysis of leaf traits</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-designing-oil-palm-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-designing-oil-palm-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating mixed-effect models into an architectural plant model to simulate inter- and intra-progeny variability: a case study on oil palm (Elaeis guineensis Jacq.)</title>
+      <link>http://www.archimed.cirad.fr/publication/perez-integrating-mixedeffect-models-2016/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/perez-integrating-mixedeffect-models-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation of leaf transpiration and sap flow in virtual plants: model description and application to a coffee plantation in Costa Rica</title>
+      <link>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
