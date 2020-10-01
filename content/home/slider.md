@@ -29,11 +29,11 @@ height = ""
   # # Call to action button (optional).
   # #   Activate the button by specifying a URL and button label below.
   # #   Deactivate by commenting out parameters, prefixing lines with `#`.
-  # cta_label = "Get Started"
-  # cta_url = "https://archimed-platform.github.io/archimed-phys-user-doc/"
-  # cta_icon_pack = "fas"
-  # cta_icon = "graduation-cap"
-
+  cta_label = "Github"
+  cta_url = "https://github.com/ARCHIMED-platform"
+  cta_icon_pack = "fab"
+  cta_icon = "github"
+  
 [[item]]
   title = "ARCHIMED-φ"
   content = "Biophysics modeling of 3D scenes."
