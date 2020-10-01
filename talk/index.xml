@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks | ARCHIMED</title>
-    <link>http://www.archimed.cirad.fr/talk/</link>
-      <atom:link href="http://www.archimed.cirad.fr/talk/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://archimed-platform.github.io/talk/</link>
+      <atom:link href="https://archimed-platform.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright>
     <image>
-      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://archimed-platform.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>http://www.archimed.cirad.fr/talk/</link>
+      <link>https://archimed-platform.github.io/talk/</link>
     </image>
     
     <item>
       <title>Light exchanges in discrete directions as an alternative to raytracing and radiosity</title>
-      <link>http://www.archimed.cirad.fr/talk/vezy-light-exchanges-discrete-2020/</link>
+      <link>https://archimed-platform.github.io/talk/vezy-light-exchanges-discrete-2020/</link>
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/talk/vezy-light-exchanges-discrete-2020/</guid>
+      <guid>https://archimed-platform.github.io/talk/vezy-light-exchanges-discrete-2020/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/hNuwQNLMmNk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -66,10 +66,10 @@
 &lt;figure id=&#34;figure-evaluation-of-the-error-induced-by-a-reduction-in-number-of-directions-left-or-a-reduction-of-the-number-of-pixels-right-for-the-intercepted-photosynthetically-active-radiation-par-absorbed-energy-par--near-infrared-and-net-carbon-assimilation-an-at-the-leaflet-scale-for-a-palm-plot-values-are-presented-relative-to-the-reference-simulation-shown-as-the-first-value-on-left-ie-136-directions-on-the-left-plot-500-000-pixels-1000-pixels-on-the-right-46-directions-turtle-only-red-color-is-used-for-a-simulation-with-a-precise-computation-of-the-sun-position-and-blue-for-an-integration-of-the-sun-position-in-the-turtle&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.archimed.cirad.fr/talk/vezy-light-exchanges-discrete-2020/plot_hu4ad0431e86f566962496890f38c5c9fd_34044_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Evaluation of the error induced by a reduction in number of directions (Left), or a reduction of the number of pixels (Right) for the intercepted photosynthetically active radiation (PAR), absorbed energy (PAR &amp;#43; near infrared) and net carbon assimilation (An) at the leaflet scale for a palm plot. Values are presented relative to the reference simulation shown as the first value on left, i.e. 136 directions on the left plot (500 000 pixels), 1000 pixels on the right (46 directions, turtle only). Red color is used for a simulation with a precise computation of the sun position, and blue for an integration of the sun position in the turtle.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://archimed-platform.github.io/talk/vezy-light-exchanges-discrete-2020/plot_hu4ad0431e86f566962496890f38c5c9fd_34044_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Evaluation of the error induced by a reduction in number of directions (Left), or a reduction of the number of pixels (Right) for the intercepted photosynthetically active radiation (PAR), absorbed energy (PAR &amp;#43; near infrared) and net carbon assimilation (An) at the leaflet scale for a palm plot. Values are presented relative to the reference simulation shown as the first value on left, i.e. 136 directions on the left plot (500 000 pixels), 1000 pixels on the right (46 directions, turtle only). Red color is used for a simulation with a precise computation of the sun position, and blue for an integration of the sun position in the turtle.&#34;&gt;
 
 
-  &lt;img data-src=&#34;http://www.archimed.cirad.fr/talk/vezy-light-exchanges-discrete-2020/plot_hu4ad0431e86f566962496890f38c5c9fd_34044_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1889&#34; height=&#34;1181&#34;&gt;
+  &lt;img data-src=&#34;https://archimed-platform.github.io/talk/vezy-light-exchanges-discrete-2020/plot_hu4ad0431e86f566962496890f38c5c9fd_34044_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1889&#34; height=&#34;1181&#34;&gt;
 &lt;/a&gt;
 
 
@@ -95,9 +95,9 @@
     
     <item>
       <title>Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density</title>
-      <link>http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/</link>
+      <link>https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/</link>
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/</guid>
+      <guid>https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/</guid>
       <description>
 
 
@@ -124,10 +124,10 @@
 &lt;figure id=&#34;figure-overview-of-the-methodological-approach-proposed-to-integrate-in-a-3d-model-the-effect-of-planting-density-on-plant-architecture-a-lidar-point-clouds-with-the-extraction-of-leaf-geometrical-attributes-length-and-curvature-b-comparison-of-lidar-based-vs-hand-measured-rachis-length-left-and-3d-positions-for-leaf-curvature-estimation-right-c-example-of-density-based-allometry-d-3d-model-outputs-for-conventional-left-and-double-right-density&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
 
 
-  &lt;img data-src=&#34;http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
+  &lt;img data-src=&#34;https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
 &lt;/a&gt;
 
 

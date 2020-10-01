@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FSPM | ARCHIMED</title>
-    <link>http://www.archimed.cirad.fr/tag/fspm/</link>
-      <atom:link href="http://www.archimed.cirad.fr/tag/fspm/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://archimed-platform.github.io/tag/fspm/</link>
+      <atom:link href="https://archimed-platform.github.io/tag/fspm/index.xml" rel="self" type="application/rss+xml" />
     <description>FSPM</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://archimed-platform.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>FSPM</title>
-      <link>http://www.archimed.cirad.fr/tag/fspm/</link>
+      <link>https://archimed-platform.github.io/tag/fspm/</link>
     </image>
     
     <item>
       <title>ARBRATATOUILLE</title>
-      <link>http://www.archimed.cirad.fr/project/arbratatouille/</link>
+      <link>https://archimed-platform.github.io/project/arbratatouille/</link>
       <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/project/arbratatouille/</guid>
+      <guid>https://archimed-platform.github.io/project/arbratatouille/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PalmStudio</title>
-      <link>http://www.archimed.cirad.fr/project/palmstudio/</link>
+      <link>https://archimed-platform.github.io/project/palmstudio/</link>
       <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/project/palmstudio/</guid>
+      <guid>https://archimed-platform.github.io/project/palmstudio/</guid>
       <description>&lt;p&gt;PalmStudio aim at developing a functional-structural plant model for oil palms (
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Elaeis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Elaeis guineensis&lt;/em&gt;&lt;/a&gt;). The model is developed using three models: 
 &lt;a href=&#34;http://amapstudio.cirad.fr/soft/archimed/start&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ARCHIMED&lt;/a&gt; for the biophysics, 

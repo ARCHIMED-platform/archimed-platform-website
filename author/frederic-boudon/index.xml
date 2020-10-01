@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frederic Boudon | ARCHIMED</title>
-    <link>http://www.archimed.cirad.fr/author/frederic-boudon/</link>
-      <atom:link href="http://www.archimed.cirad.fr/author/frederic-boudon/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://archimed-platform.github.io/author/frederic-boudon/</link>
+      <atom:link href="https://archimed-platform.github.io/author/frederic-boudon/index.xml" rel="self" type="application/rss+xml" />
     <description>Frederic Boudon</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Mon, 05 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://archimed-platform.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Frederic Boudon</title>
-      <link>http://www.archimed.cirad.fr/author/frederic-boudon/</link>
+      <link>https://archimed-platform.github.io/author/frederic-boudon/</link>
     </image>
     
     <item>
       <title>Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density</title>
-      <link>http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/</link>
+      <link>https://archimed-platform.github.io/publication/perez-functionalstructural-model-oil-2020/</link>
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/</guid>
+      <guid>https://archimed-platform.github.io/publication/perez-functionalstructural-model-oil-2020/</guid>
       <description>
 
 
@@ -43,10 +43,10 @@
 &lt;figure id=&#34;figure-overview-of-the-methodological-approach-proposed-to-integrate-in-a-3d-model-the-effect-of-planting-density-on-plant-architecture-a-lidar-point-clouds-with-the-extraction-of-leaf-geometrical-attributes-length-and-curvature-b-comparison-of-lidar-based-vs-hand-measured-rachis-length-left-and-3d-positions-for-leaf-curvature-estimation-right-c-example-of-density-based-allometry-d-3d-model-outputs-for-conventional-left-and-double-right-density&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://archimed-platform.github.io/publication/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
 
 
-  &lt;img data-src=&#34;http://www.archimed.cirad.fr/publication/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
+  &lt;img data-src=&#34;https://archimed-platform.github.io/publication/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
 &lt;/a&gt;
 
 
@@ -68,9 +68,9 @@
     
     <item>
       <title>Toward a functional-structural model of oil palm accounting for architectural plasticity in response to planting density</title>
-      <link>http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/</link>
+      <link>https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/</link>
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/</guid>
+      <guid>https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/</guid>
       <description>
 
 
@@ -97,10 +97,10 @@
 &lt;figure id=&#34;figure-overview-of-the-methodological-approach-proposed-to-integrate-in-a-3d-model-the-effect-of-planting-density-on-plant-architecture-a-lidar-point-clouds-with-the-extraction-of-leaf-geometrical-attributes-length-and-curvature-b-comparison-of-lidar-based-vs-hand-measured-rachis-length-left-and-3d-positions-for-leaf-curvature-estimation-right-c-example-of-density-based-allometry-d-3d-model-outputs-for-conventional-left-and-double-right-density&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Overview of the methodological approach proposed to integrate in a 3D model the effect of planting density on plant architecture. A) Lidar point clouds with the extraction of leaf geometrical attributes (length and curvature). B) Comparison of LiDAR-based vs hand-measured rachis length (left) and 3D positions for leaf curvature estimation (right). C) Example of density-based allometry. D) 3D model outputs for conventional (left) and double (right) density.&#34;&gt;
 
 
-  &lt;img data-src=&#34;http://www.archimed.cirad.fr/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
+  &lt;img data-src=&#34;https://archimed-platform.github.io/talk/perez-functionalstructural-model-oil-2020/plot_hu3dccfb6f983c74101ef027d8e067354b_681517_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1518&#34; height=&#34;872&#34;&gt;
 &lt;/a&gt;
 
 

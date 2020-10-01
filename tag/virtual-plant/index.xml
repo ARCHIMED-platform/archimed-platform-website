@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtual plant | ARCHIMED</title>
-    <link>http://www.archimed.cirad.fr/tag/virtual-plant/</link>
-      <atom:link href="http://www.archimed.cirad.fr/tag/virtual-plant/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://archimed-platform.github.io/tag/virtual-plant/</link>
+      <atom:link href="https://archimed-platform.github.io/tag/virtual-plant/index.xml" rel="self" type="application/rss+xml" />
     <description>Virtual plant</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Mon, 01 Jan 2001 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.archimed.cirad.fr/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://archimed-platform.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Virtual plant</title>
-      <link>http://www.archimed.cirad.fr/tag/virtual-plant/</link>
+      <link>https://archimed-platform.github.io/tag/virtual-plant/</link>
     </image>
     
     <item>
       <title>Simulation of leaf transpiration and sap flow in virtual plants: model description and application to a coffee plantation in Costa Rica</title>
-      <link>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</link>
+      <link>https://archimed-platform.github.io/publication/dauzat-simulation-leaf-transpiration-2001/</link>
       <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
-      <guid>http://www.archimed.cirad.fr/publication/dauzat-simulation-leaf-transpiration-2001/</guid>
+      <guid>https://archimed-platform.github.io/publication/dauzat-simulation-leaf-transpiration-2001/</guid>
       <description></description>
     </item>
     
