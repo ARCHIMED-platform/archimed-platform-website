@@ -16,12 +16,12 @@ jobs:
       - name: Install rmarkdown and blogdown
         run: Rscript -e 'install.packages(c("rmarkdown","blogdown"))'
       - name: Install Hugo
-        run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.66.0")'
+        run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.75.1")'
       - name: Get themes
         run: git submodule update --remote
       - name: Look at files
         run: Rscript -e 'dir()'
-      - name: Install Learn theme
+      - name: Install academic theme
         run: Rscript -e 'blogdown::install_theme("wowchemy/starter-academic")'
       - name: Run hugo_build()
         run: Rscript -e 'blogdown::hugo_build(local = FALSE)'
