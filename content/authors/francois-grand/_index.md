@@ -23,6 +23,7 @@ bio: I am the main developer of ARCHIMED. I recently refactored the model to a n
 interests:
 - Programing
 - Java
+- Linux
 - Python
 
 # Social/Academic Networking
