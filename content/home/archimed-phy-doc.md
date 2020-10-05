@@ -13,10 +13,16 @@ weight = 16  # Order that this section will appear.
 # hero_media = https://raw.githubusercontent.com/ARCHIMED-platform/archimed-phys-user-doc/master/static/images/logo_phy.png
 
 [cta]
-url = "https://archimed-platform.github.io/archimed-phys-user-doc/"
-label = "Get Started"
+url = "https://archimed-platform.github.io/archimed-phys-user-doc/2-Getting-started/1-example-data.files/archimed-phys.jar"
+label = "Download"
 icon_pack = "fas"
 icon = "download"
+
+[cta_alt]
+url = "https://archimed-platform.github.io/archimed-phys-user-doc/"
+label = "Documentation"
+icon_pack = "fas"
+icon = "graduation-cap"
 
 [design]
 #   # Choose how many columns the section has. Valid values: 1 or 2.
